@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tilt Effect</title>
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+<body>
+  <div class="main">
+    <div class="box" data-tilt>
+      <img src="mbison.jpg" alt="">
+      <p>You still refuse to ACCEPT my God-Hood?</p>
+
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <script>
+    VanillaTilt.init(document.querySelector(".box"),{
+      max: 25,
+      speed: 400
+    });
+  </script>
+</body>
+</html>
