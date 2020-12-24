@@ -11,3 +11,5 @@ Now I'll be looking at the treasure trove of CCS/Javascript I've seen all on Ins
 now starting on the code by the instagram page " sparshcodes " 
 
 also trying the codes by the instagram page " coding.beast "
+
+now that I have so many as is, the next step will be to combine these effects into a webpage to show them off. 
