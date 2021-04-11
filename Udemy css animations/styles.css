@@ -1,0 +1,64 @@
+button {
+    height: 90px;
+    width: 290px;
+    font-size: 28px;
+    color: white; 
+    border: none;
+    background-color: blue;
+    transition-property: background-color ;
+    transition-duration: 1s;
+    /* transition-delay: 2s; */
+}
+
+button:hover {
+    background-color: green;
+}
+
+
+
+
+
+/* CSS for the transition timing buttons */
+
+.container {
+    width: 960px;
+}
+
+.move {
+    margin: 2rem;
+    width: 150px;
+    height: 50px;
+    padding: 10px 15px;
+    background-color: red;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    border-radius: .5em;
+    font-size: 20px;
+    transition-property: translate();
+    transition-duration: 3s;
+}
+
+#ease {
+    transition-timing-function: ease;
+}
+
+#linear {
+    transition-timing-function: linear;
+}
+
+#ease-in {
+    transition-timing-function: ease-in;
+}
+
+#ease-out {
+    transition-timing-function: ease-out;
+}
+
+#ease-in-out {
+    transition-timing-function: ease-in-out;
+}
+
+.move:hover {
+    transform: translate(900px, 0);
+}

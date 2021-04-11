@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Effects</title>
+    <link rel ="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <p> What is the CSS Transition Property and what can it do for us? 
+    </p>
+
+    <p> The CSS Transition Property is applied to a specific element 
+        to make other proporties of the element transition smoothly over a given duration 
+        , or animate it in a nice way 
+      </p>
+
+      <button>css transition</button>
+
+      <p>____________________________________</p>
+
+      <p> Now onto the Transition-timing-function</p>
+      <p> This controls how the change in the property will occur</p>
+      <ul>
+          <li> ease : the change starts slow and then goes faster, then finishes slow</li>
+          <li> linear : the change occurs at the same rate </li>
+          <li> ease-in : the change starts slow and then goes faster before the end</li>
+          <li> ease-out : the changes starts fast then slows down before the end</li>
+          <li> ease-in-out: the change starts slow then goes faster then finishes slow</li>
+      </ul>
+
+      <div class="container">
+          <div id="ease" class="move">Ease (default)</div>
+          <div id="linear" class="move">Linear</div>
+          <div id="ease-in" class="move">Ease-In</div>
+          <div id="ease-out" class="move">Ease-Out</div>
+          <div id="ease-in-out" class="move">Ease-In-Out</div>
+      </div>
+
+       <p> There is also the Transition-Delay property which sets the time before the transition starts</p>
+        <p> it accepts values in seconds or milliseconds</p>
+</body>
+</html>
