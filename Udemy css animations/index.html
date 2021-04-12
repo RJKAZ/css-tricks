@@ -41,5 +41,27 @@
 
        <p> There is also the Transition-Delay property which sets the time before the transition starts</p>
         <p> it accepts values in seconds or milliseconds</p>
+        
+        <p>You can also add more then one property to the transistion property CSS to effect more then one element</p>
+        <p>transition-property: background-color color width;</p>
+        <p> so each property seperated by a space, but if you need to apply the transition to alot, you can also put All
+        <p>transition-property: all;</p>
+        <p>There is also a faster way, just by using "transition" you can pass multiple css options into one
+        </p>
+        <p>transition: background-color 3s ease-in-out 1s, color 2s ease 4s;</p>
+
+        <p> Important to note, not all CSS properties can use CSS transitions since they are not animatable</p>
+        <ul>
+            <li>background-image</li>
+            <li>display</li>
+            <li>border-style</li>
+            <li>position</li>
+            <li>float</li>
+            <li>background-repeat</li>
+            <li>font-family</li>
+            <li> and many others</li>
+        </ul>
+        <p>Animated properties are those that can be expressed by numbers becasue the browser can interpurt the values such as width, height, border-width, padding, margin, opacity, etc </p>
+        <p> We can also animate properties that can be expressed by color such as the properties color and background-color </p>
 </body>
 </html>
