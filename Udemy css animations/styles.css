@@ -67,3 +67,18 @@ button:hover {
 .move:hover {
     transform: translate(900px, 0);
 }
+
+/* CSS for the translating Cat image */
+
+img {
+    width: 300px;
+    display: block;
+    margin: auto;
+    margin-top: 200px;
+    transition: transform 2s;
+}
+
+img:hover {
+    transform: translate(-500px, 200px);
+
+}
