@@ -82,3 +82,34 @@ img:hover {
     transform: translate(-500px, 200px);
 
 }
+
+.cat2:hover {
+    transform: scale(2, 2);
+}
+
+.cat3:hover {
+/*  transform: rotate(360deg);   */
+/*  transform: rotate(1turn);    */
+/*  transform: rotate(-0.5turn); */
+transform: rotate(200grad);
+}
+
+.cat4:hover {
+    transform: skew(20deg, 40deg);
+}
+
+.cat5 {
+    transform-origin: top;
+}
+
+.cat5:hover {
+    transform: rotate(45deg);
+}
+
+.cat6 {
+    transform-origin: 30% 80%;
+}
+
+.cat6:hover {
+    transform: rotate(45deg);
+}
