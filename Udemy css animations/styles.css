@@ -113,3 +113,11 @@ transform: rotate(200grad);
 .cat6:hover {
     transform: rotate(45deg);
 }
+
+.cat3d:hover {
+    transform: rotateY(60deg);
+}
+
+body {
+    perspective: 500px;
+}
