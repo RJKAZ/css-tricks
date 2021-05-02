@@ -306,7 +306,6 @@ body {
   opacity: 1;
 }
 
-
 /* Button Effect 9 */
 
 .button9 {
@@ -324,7 +323,7 @@ body {
 }
 
 .button9:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -337,14 +336,13 @@ body {
   transition: all 0.5s;
 }
 
-.button9:hover{
-  color: white; 
+.button9:hover {
+  color: white;
 }
 
 .button9:hover:before {
   height: 190%;
 }
-
 
 /* Button Effect 10 */
 
@@ -353,14 +351,14 @@ body {
   text-decoration: none;
   text-transform: uppercase;
   background-color: #f1c40f;
-  color: white; 
+  color: white;
   font-size: 20px;
   letter-spacing: 2px;
   position: relative;
 }
 
 .button10:before {
-  content: "button";
+  content: 'button';
   position: absolute;
   top: 0;
   left: 0;
@@ -380,7 +378,7 @@ body {
 }
 
 .button10:after {
-  content: "button";
+  content: 'button';
   position: absolute;
   top: 0;
   left: 0;
@@ -414,7 +412,7 @@ body {
 }
 
 .button11:before {
-  content: "button";
+  content: 'button';
   position: absolute;
   top: 0;
   left: 0;
@@ -432,11 +430,10 @@ body {
   left: 100%;
   transform: scale(0) rotateY(360deg);
   opacity: 0;
-
 }
 
 .button11:after {
-  content: "button";
+  content: 'button';
   position: absolute;
   top: 0;
   left: -100;
@@ -456,7 +453,6 @@ body {
   left: 0;
   transform: scale(1) rotateY(360deg);
   opacity: 1;
-
 }
 
 /* Button Effect 12 */
@@ -475,9 +471,9 @@ body {
   position: relative;
 }
 
-.button12:before, 
+.button12:before,
 .button12:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 50%;
   width: 20px;
@@ -485,7 +481,7 @@ body {
   background-color: #ff0;
   border-radius: 50%;
   transform: translateY(-50%);
-  transition: all 0.3s; 
+  transition: all 0.3s;
   z-index: -1;
   opacity: 0;
 }
@@ -496,7 +492,7 @@ body {
 }
 
 .button12:after {
-  right: 0; 
+  right: 0;
   box-shadow: 100px 0 0 #ff0;
 }
 
@@ -554,14 +550,14 @@ span {
 }
 
 .button13:before {
-  content: "";
+  content: '';
   position: absolute;
   top: -3px;
   left: -3px;
   width: 100%;
   height: 100%;
   background-color: #20caff;
-  z-index: -1; 
+  z-index: -1;
   mix-blend-mode: multiply;
   transition: all 0.2s;
   transform-origin: top;
@@ -574,17 +570,17 @@ span {
 }
 
 .button13:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 3px;
   left: 3px;
   width: 100%;
   height: 100%;
   background-color: #ff7675;
-  z-index: -1; 
+  z-index: -1;
   mix-blend-mode: multiply;
   transition: all 0.2s;
-  transform-origin: bottom; 
+  transform-origin: bottom;
 }
 
 .button13:hover:after {
@@ -596,7 +592,6 @@ span {
 .button13:hover {
   color: #272727;
 }
-
 
 /* Button Effect 14 */
 
@@ -618,7 +613,7 @@ span {
 .button14:after,
 .button14 span:before,
 .button14 span:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 25%;
   height: 100%;
@@ -640,7 +635,7 @@ span {
 .button14:after {
   top: -100%;
   right: 0;
-  transition-delay: 0.3s
+  transition-delay: 0.3s;
 }
 
 .button14:hover:after {
@@ -662,7 +657,7 @@ span {
 .button14 span:after {
   bottom: -100%;
   right: 25%;
-  transition-delay: 0.2s
+  transition-delay: 0.2s;
 }
 
 .button14:hover span:after {
@@ -672,4 +667,53 @@ span {
 
 .button14:hover {
   color: #222;
+}
+
+/* Button 15 */
+
+.button15 {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 22px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  letter-spacing: 3px;
+  height: 60px;
+  width: 200px;
+  line-height: 60px;
+  text-align: center;
+  color: #fdc518;
+  position: relative;
+}
+
+.button15:before {
+  content: '';
+  position: absolute;
+  height: 60px;
+  width: 200px;
+  top: -15px;
+  left: 0;
+  border-left: 2px solid red;
+  border-right: 2px solid #fdc518;
+  transition: all 0.4s;
+}
+
+.button15:after {
+  content: '';
+  position: absolute;
+  height: 60px;
+  width: 230px;
+  top: 0;
+  left: -15px;
+  border-top: 2px solid red;
+  border-bottom: 2px solid #fdc518;
+  transition: all 0.4s;
+  transition-delay: 0.2s;
+}
+
+.button15:hover:before {
+  transform: rotateY(180deg);
+}
+
+.button15:hover:after {
+  transform: rotateX(180deg);
 }
