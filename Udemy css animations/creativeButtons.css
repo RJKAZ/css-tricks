@@ -707,7 +707,7 @@ span {
   border-top: 2px solid red;
   border-bottom: 2px solid #fdc518;
   transition: all 0.4s;
-  transition-delay: 0.2s;
+  transition-delay: 0.4s;
 }
 
 .button15:hover:before {
@@ -716,4 +716,103 @@ span {
 
 .button15:hover:after {
   transform: rotateX(180deg);
+}
+
+/* Button 16 */
+
+.button16 {
+  border: none;
+  padding: 12px 40px;
+  background-color: #c47135;
+  color: white;
+  font-family: 'BenchNine';
+  font-size: 22px;
+  text-transform: uppercase;
+  cursor: pointer;
+  position: relative;
+}
+
+.button16:before {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: -5px;
+  left: -5px;
+  border-top: 2px solid #c47135;
+  border-left: 2px solid #c47135;
+  transition: all 0.25s;
+}
+
+.button16:hover:before,
+.button16:hover:after {
+  height: 100%;
+  width: 100%;
+}
+
+.button16:after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: -5px;
+  right: -5px;
+  border-bottom: 2px solid #c47135;
+  border-right: 2px solid #c47135;
+  transition: all 0.25s;
+}
+
+/* Button 17 */
+
+.button17 {
+  text-decoration: none;
+  width: 160px;
+  height: 60px;
+  color: black;
+  border: 2px solid black;
+  text-align: center;
+  line-height: 60px;
+  font-size: 25px;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.button17:hover {
+  color: white;
+}
+
+.button17:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+  opacity: 0;
+  transition: all 0.8s;
+}
+
+.button17:hover:before {
+  opacity: 1;
+  transform: rotate(15deg);
+}
+
+.button17 span {
+  color: transparent;
+  position: relative;
+}
+
+.button17 span:before {
+  content: "B";
+  position: absolute;
+  color: black;
+  transition: all 0.2s;
+}
+
+.button17:hover span:before {
+  color: white; 
+  font-size: 80px;
+  transform:translate(-65%, -10%) rotate(360deg);
 }
