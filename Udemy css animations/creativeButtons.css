@@ -733,7 +733,7 @@ span {
 }
 
 .button16:before {
-  content: "";
+  content: '';
   position: absolute;
   width: 24px;
   height: 24px;
@@ -751,7 +751,7 @@ span {
 }
 
 .button16:after {
-  content: "";
+  content: '';
   position: absolute;
   width: 24px;
   height: 24px;
@@ -782,7 +782,7 @@ span {
 }
 
 .button17:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -805,16 +805,16 @@ span {
 }
 
 .button17 span:before {
-  content: "B";
+  content: 'B';
   position: absolute;
   color: black;
   transition: all 0.2s;
 }
 
 .button17:hover span:before {
-  color: white; 
+  color: white;
   font-size: 80px;
-  transform:translate(-65%, -10%) rotate(360deg);
+  transform: translate(-65%, -10%) rotate(360deg);
 }
 
 /*Button 18*/
@@ -828,16 +828,17 @@ span {
   text-transform: uppercase;
   line-height: 120px;
   text-align: center;
-  color: white;
+  color: black;
   font-size: 45px;
   letter-spacing: 15px;
+  overflow: hidden;
 }
 
 .button18:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
-  left: -100;
+  left: -100%;
   width: 100%;
   height: 4px;
   background-color: white;
@@ -849,7 +850,7 @@ span {
 }
 
 .button18:after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   right: -100%;
@@ -864,7 +865,7 @@ span {
 }
 
 .button18:after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   right: -100%;
@@ -878,8 +879,8 @@ span {
   right: 0;
 }
 
-span:before {
-  content: "";
+.button18 span:before {
+  content: '';
   position: absolute;
   top: -100%;
   right: 0;
@@ -893,8 +894,8 @@ span:before {
   top: 0;
 }
 
-span:after {
-  content: "";
+.button18 span:after {
+  content: '';
   position: absolute;
   bottom: -100%;
   left: 0;
@@ -906,4 +907,58 @@ span:after {
 
 .button18:hover span:after {
   bottom: 0;
+}
+
+/* Button 19 - wave effect*/
+
+.button19 {
+  text-decoration: none;
+  padding: 15px 30px;
+  color: #00aeff;
+  font-size: 18px;
+  letter-spacing: 3px;
+  border: 2px solid #00aeff;
+  text-transform: uppercase;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+
+.button18:hover {
+  color: white;
+}
+
+.wave {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: calc(100% + 22px);
+  background-color: #00aeff;
+  transition: all 1s;
+  z-index: -1;
+}
+
+.button19:hover .wave {
+  top: 0;
+}
+
+.wave:before {
+  content: '';
+  position: absolute;
+  top: -22px;
+  left: 0;
+  width: 100%;
+  height: 22px;
+  background: url(wave.png);
+  animation: wavy 0.5s linear infinite;
+}
+
+@keyframes wavy {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 118px;
+  }
 }
