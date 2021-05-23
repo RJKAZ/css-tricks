@@ -4,20 +4,23 @@ body {
   justify-content: center;
   align-items: center;
   font-family: 'Lato', sans-serif;
+  flex-direction: column;
 }
 
-.container {
+/*Image 1*/
+
+.container1 {
   width: 500px;
   height: 500px;
   position: relative;
   overflow: hidden;
 }
 
-img {
+.img1 {
   width: 100%;
 }
 
-.caption {
+.caption1 {
   position: absolute;
   top: 0;
   left: 0;
@@ -33,21 +36,115 @@ img {
   background: rgba(0, 0, 0, 0);
 }
 
-.caption h1 {
+.firsth1 {
   text-transform: uppercase;
   margin: 0;
 }
 
-.caption p {
+.firstp {
   font-size: 18px;
   text-transform: capitalize;
 }
 
-.container:hover .caption {
+.container1:hover .caption1 {
   opacity: 1;
   background: rgba(0, 0, 0, 0.5);
 }
 
-.container:hover img {
+.container1:hover .img1 {
   transform: scale(1.3) rotate(15deg);
+}
+
+/*Image 2*/
+
+.container2 {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.img2 {
+  width: 100%;
+}
+
+.cap2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.5s;
+  transform: translateY(-100%)
+}
+
+.secondh1 {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.secondp {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.container2:hover .cap2 {
+ background-color: rgba(0, 0, 0, 0.5);
+ transform: translateY(0);
+}
+
+.container2:hover .img2 {
+  transform: scale(1.3) rotate(-15deg);
+}
+
+/*Image 3*/
+
+.container3 {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.img3 {
+  width: 100%;
+}
+
+.caption3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.5s;
+  background-color: black;
+  transform: translateY(-100%);
+}
+
+.thirdh1 {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.thirdp {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.container3:hover .caption3 {
+ transform: translateY(0);
+}
+
+.container3:hover .img3 {
+ transform: translateY(100%)
 }
