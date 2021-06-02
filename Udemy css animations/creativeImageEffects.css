@@ -5,6 +5,7 @@ body {
   align-items: center;
   font-family: 'Lato', sans-serif;
   flex-direction: column;
+  margin: 0;
 }
 
 /*Image 1*/
@@ -148,3 +149,124 @@ body {
 .container3:hover .img3 {
  transform: translateY(100%)
 }
+
+/*Image 4*/
+
+.container4 {
+  width: 500px;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.img4 {
+  width: 100%;
+  transition: all .5s;
+}
+
+.caption4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: all 0.5s;
+  background: black;
+  transform: translateY(100%);
+}
+
+.forthh1 {
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.forthp {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+
+.container4:hover .caption4 {
+  transform: translateY(0);
+}
+
+.container4:hover .img4 {
+ transform: translateY(-30%);
+}
+
+/*Image 5*/
+
+.fig {
+  width: 500;
+  color: white;
+  font-family: "Raleway";
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.fig .img5 {
+  width: 100%;
+}
+
+.fig:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #006266;
+  opacity: 0.5;
+  transform: translateY(100%);
+  transition: all 0.25s;
+  transition-delay: 0.25s;
+}
+
+.fig:hover:before {
+  transform: translateY(0);
+  transition-delay: 0s;
+  
+}
+
+  .fig .caption5 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-20px);
+    opacity: 0;
+    transition: all 0.25s;
+  }
+
+  .fig:hover .caption5 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 0.3s;
+  }
+
+  .fig h3, .fig h5 {
+    margin: 0;
+    letter-spacing: 1px;
+  }
+
+  .fig h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 5px;
+  }
+
+  .fig h5 {
+    background-color: #ae895d;
+    padding: 3px 5px;
+  }
+
+
