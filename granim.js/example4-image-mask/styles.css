@@ -1,0 +1,21 @@
+.jslogo {
+    position: relative;
+    width: 130px;
+    height: 49px;
+    float: left;
+}
+
+.jslogo canvas, .jslogo .logo-mask {
+    display: block;
+    width: 130px;
+    height: 49px;
+}
+
+.jslogo .logo-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-size: 130px;
+    background-image: url("js.png");
+    text-indent: -9999px;
+}
